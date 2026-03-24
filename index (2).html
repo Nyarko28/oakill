@@ -1,0 +1,1620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Oakhill Royal International School | Apowa-Agona Road, Takoradi</title>
+<meta name="description" content="Oakhill Royal International School on Apowa-Agona Road, Takoradi offers British Cambridge IGCSE and Ghanaian curricula for Nursery to SHS."/>
+<meta name="theme-color" content="#0d2a5e"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+/* ─── ANNOUNCEMENT BANNER ─── */
+.announcement{
+  background:linear-gradient(90deg,var(--royal),var(--royal-mid),var(--royal));
+  background-size:200% 100%;
+  animation:shimmer 4s infinite;
+  padding:10px 5%;
+  text-align:center;
+  position:relative;z-index:1001;
+}
+.announcement p{
+  font-size:12px;font-weight:500;
+  letter-spacing:2px;text-transform:uppercase;
+  color:var(--gold-light);
+}
+.announcement span{
+  background:var(--gold);color:var(--royal);
+  padding:2px 10px;border-radius:2px;
+  font-weight:700;font-size:11px;
+  margin-left:10px;
+}
+@keyframes shimmer{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+:root {
+  --royal: #0d2a5e;
+  --royal-mid: #1a3a7c;
+  --gold: #c9a84c;
+  --gold-light: #e8c96a;
+  --gold-pale: #f5e9c8;
+  --cream: #faf7f2;
+  --dark: #0a0f1e;
+  --text: #2c2c2c;
+  --text-light: #6b7280;
+  --white: #ffffff;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+html{scroll-behavior:smooth;}
+
+body{
+  font-family:'Outfit',sans-serif;
+  background:var(--cream);
+  color:var(--text);
+  overflow-x:hidden;
+  padding-bottom:92px;
+}
+
+/* ─── SCROLLBAR ─── */
+::-webkit-scrollbar{width:6px;}
+::-webkit-scrollbar-track{background:var(--royal);}
+::-webkit-scrollbar-thumb{background:var(--gold);}
+
+/* ─── NAVBAR ─── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  padding:0 5%;
+  display:flex;align-items:center;justify-content:space-between;
+  height:80px;
+  transition:all .4s ease;
+  background:transparent;
+}
+nav.scrolled{
+  background:rgba(10,15,30,.96);
+  backdrop-filter:blur(20px);
+  box-shadow:0 2px 40px rgba(0,0,0,.3);
+}
+.nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.logo-crown{
+  width:44px;height:44px;
+  background:linear-gradient(135deg,var(--gold),var(--gold-light));
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;
+  box-shadow:0 4px 15px rgba(201,168,76,.4);
+  overflow:hidden;
+}
+.logo-crown img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.logo-text{color:var(--white);}
+.logo-text strong{
+  display:block;
+  font-family:'Cormorant Garamond',serif;
+  font-size:22px;font-weight:700;
+  letter-spacing:1px;
+  line-height:1;
+}
+.logo-text span{
+  font-size:10px;font-weight:300;
+  letter-spacing:3px;text-transform:uppercase;
+  color:var(--gold-light);opacity:.9;
+}
+.nav-links{
+  display:flex;align-items:center;gap:32px;
+  list-style:none;
+}
+.nav-links a{
+  color:rgba(255,255,255,.85);
+  text-decoration:none;
+  font-size:13px;font-weight:500;
+  letter-spacing:1px;text-transform:uppercase;
+  transition:.3s;position:relative;
+}
+.nav-links a::after{
+  content:'';position:absolute;bottom:-4px;left:0;right:0;
+  height:1px;background:var(--gold);
+  transform:scaleX(0);transition:.3s;
+}
+.nav-links a:hover{color:var(--gold-light);}
+.nav-links a:hover::after{transform:scaleX(1);}
+.nav-cta{
+  background:linear-gradient(135deg,var(--gold),var(--gold-light));
+  color:var(--royal)!important;
+  padding:10px 24px;border-radius:2px;
+  font-weight:600!important;
+  box-shadow:0 4px 20px rgba(201,168,76,.35);
+  transition:all .3s!important;
+}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(201,168,76,.5)!important;}
+.nav-cta::after{display:none!important;}
+
+.hamburger{
+  display:none;flex-direction:column;gap:5px;cursor:pointer;
+  background:none;border:none;padding:4px;
+}
+.hamburger span{
+  display:block;width:24px;height:2px;
+  background:var(--white);transition:.3s;
+}
+
+/* ─── HERO ─── */
+.hero{
+  position:relative;height:100vh;min-height:700px;
+  display:flex;align-items:center;
+  overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background:url('https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1800&q=80') center/cover no-repeat;
+}
+.hero-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(120deg,rgba(10,15,30,.92) 0%,rgba(13,42,94,.85) 50%,rgba(10,15,30,.6) 100%);
+}
+.hero-content{
+  position:relative;z-index:2;
+  max-width:1200px;margin:0 auto;padding:0 5%;
+  width:100%;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  color:var(--gold);font-size:12px;font-weight:500;
+  letter-spacing:4px;text-transform:uppercase;
+  margin-bottom:24px;
+  opacity:0;animation:fadeUp .8s .3s forwards;
+}
+.hero-eyebrow::before{content:'';width:40px;height:1px;background:var(--gold);}
+.hero-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(52px,7vw,90px);
+  font-weight:700;line-height:1.05;
+  color:var(--white);
+  margin-bottom:24px;
+  opacity:0;animation:fadeUp .8s .5s forwards;
+}
+.hero-title em{
+  font-style:italic;
+  color:var(--gold-light);
+  display:block;
+}
+.hero-sub{
+  font-size:clamp(15px,2vw,18px);
+  color:rgba(255,255,255,.75);
+  max-width:560px;line-height:1.7;
+  margin-bottom:44px;
+  font-weight:300;
+  opacity:0;animation:fadeUp .8s .7s forwards;
+}
+.hero-btns{
+  display:flex;gap:16px;flex-wrap:wrap;
+  opacity:0;animation:fadeUp .8s .9s forwards;
+}
+.hero-trust{
+  margin-top:22px;
+  display:flex;gap:10px;flex-wrap:wrap;
+  opacity:0;animation:fadeUp .8s 1.05s forwards;
+}
+.trust-pill{
+  padding:8px 12px;
+  border:1px solid rgba(255,255,255,.22);
+  border-radius:100px;
+  font-size:11px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.85);
+  background:rgba(255,255,255,.06);
+}
+.btn-gold{
+  background:linear-gradient(135deg,var(--gold),var(--gold-light));
+  color:var(--royal);padding:16px 36px;
+  font-weight:600;font-size:14px;
+  letter-spacing:1px;text-transform:uppercase;
+  text-decoration:none;border-radius:2px;
+  box-shadow:0 8px 30px rgba(201,168,76,.4);
+  transition:all .3s;display:inline-block;
+}
+.btn-gold:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(201,168,76,.55);}
+.btn-outline{
+  border:1px solid rgba(255,255,255,.5);
+  color:var(--white);padding:16px 36px;
+  font-weight:400;font-size:14px;
+  letter-spacing:1px;text-transform:uppercase;
+  text-decoration:none;border-radius:2px;
+  transition:all .3s;display:inline-block;
+  backdrop-filter:blur(10px);
+}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-3px);}
+
+.hero-stats{
+  position:absolute;bottom:0;left:0;right:0;
+  background:rgba(10,15,30,.7);
+  backdrop-filter:blur(20px);
+  border-top:1px solid rgba(201,168,76,.2);
+  display:flex;
+  opacity:0;animation:fadeIn 1s 1.2s forwards;
+}
+.stat-item{
+  flex:1;padding:22px 5%;
+  display:flex;align-items:center;gap:14px;
+  border-right:1px solid rgba(255,255,255,.08);
+}
+.stat-item:last-child{border-right:none;}
+.stat-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:32px;font-weight:700;
+  color:var(--gold);line-height:1;
+}
+.stat-label{
+  font-size:11px;font-weight:400;
+  color:rgba(255,255,255,.6);
+  letter-spacing:1px;text-transform:uppercase;
+  line-height:1.4;
+}
+
+/* ─── SECTIONS ─── */
+section{padding:100px 5%;}
+.section-inner{max-width:1200px;margin:0 auto;}
+
+.section-tag{
+  display:inline-flex;align-items:center;gap:10px;
+  color:var(--gold);font-size:11px;font-weight:500;
+  letter-spacing:4px;text-transform:uppercase;
+  margin-bottom:16px;
+}
+.section-tag::before{content:'';width:30px;height:1px;background:var(--gold);}
+
+.section-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(38px,5vw,58px);
+  font-weight:700;line-height:1.1;
+  color:var(--royal);
+  margin-bottom:16px;
+}
+.section-title em{font-style:italic;color:var(--gold);}
+
+/* ─── FOUNDERS ─── */
+.founders{background:var(--royal);position:relative;overflow:hidden;}
+.founders::before{
+  content:'';position:absolute;
+  top:-100px;right:-100px;
+  width:500px;height:500px;
+  background:radial-gradient(circle,rgba(201,168,76,.12) 0%,transparent 70%);
+  border-radius:50%;
+}
+.founders .section-title{color:var(--white);}
+.founders-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;margin-top:60px;}
+.founders-img{
+  position:relative;
+  border-radius:4px;overflow:hidden;
+}
+.founders-img img{
+  width:100%;height:500px;object-fit:cover;
+  display:block;filter:brightness(.9);
+}
+.founders-img::before{
+  content:'';position:absolute;
+  top:-12px;left:-12px;right:12px;bottom:12px;
+  border:1px solid rgba(201,168,76,.4);
+  border-radius:4px;z-index:-1;
+}
+.founders-img-badge{
+  position:absolute;bottom:24px;left:24px;
+  background:var(--gold);
+  color:var(--royal);padding:12px 20px;
+  font-size:12px;font-weight:600;
+  letter-spacing:2px;text-transform:uppercase;
+}
+.founders-text .section-tag{color:var(--gold-light);}
+.founders-body{
+  color:rgba(255,255,255,.75);
+  font-size:16px;line-height:1.85;
+  margin-bottom:32px;font-weight:300;
+}
+.founders-quote{
+  border-left:3px solid var(--gold);
+  padding:20px 28px;
+  background:rgba(201,168,76,.08);
+  border-radius:0 4px 4px 0;
+  margin-bottom:20px;
+}
+.founders-quote p{
+  font-family:'Cormorant Garamond',serif;
+  font-size:22px;font-style:italic;
+  color:var(--gold-light);line-height:1.6;
+  margin-bottom:10px;
+}
+.founders-quote cite{
+  font-size:12px;letter-spacing:2px;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.5);
+  font-style:normal;
+}
+.values-row{
+  display:flex;gap:24px;margin-top:36px;
+}
+.value-pill{
+  flex:1;padding:16px;
+  border:1px solid rgba(201,168,76,.25);
+  border-radius:4px;text-align:center;
+  background:rgba(255,255,255,.04);
+  transition:.3s;
+}
+.value-pill:hover{border-color:var(--gold);background:rgba(201,168,76,.08);}
+.value-pill .icon{font-size:22px;margin-bottom:8px;}
+.value-pill p{
+  font-size:13px;font-weight:600;
+  letter-spacing:2px;text-transform:uppercase;
+  color:var(--gold);
+}
+
+/* ─── ACADEMICS ─── */
+.academics{background:var(--cream);}
+.academics-intro{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:80px;align-items:end;margin-bottom:70px;
+}
+.academics-desc{
+  color:var(--text-light);font-size:16px;
+  line-height:1.8;font-weight:300;
+}
+.curriculum-cards{
+  display:grid;grid-template-columns:1fr 1fr;gap:24px;
+}
+.curr-card{
+  padding:40px 36px;border-radius:4px;
+  position:relative;overflow:hidden;
+  transition:transform .3s;
+}
+.curr-card:hover{transform:translateY(-6px);}
+.curr-card.cambridge{
+  background:var(--royal);
+  box-shadow:0 20px 60px rgba(13,42,94,.25);
+}
+.curr-card.ghanaian{
+  background:var(--gold);
+  box-shadow:0 20px 60px rgba(201,168,76,.3);
+}
+.curr-card::before{
+  content:'';position:absolute;
+  top:-60px;right:-60px;
+  width:180px;height:180px;
+  border-radius:50%;
+  background:rgba(255,255,255,.06);
+}
+.curr-flag{
+  font-size:32px;margin-bottom:16px;
+  display:block;
+}
+.curr-card h3{
+  font-family:'Cormorant Garamond',serif;
+  font-size:26px;font-weight:700;
+  margin-bottom:12px;
+}
+.curr-card.cambridge h3{color:var(--white);}
+.curr-card.ghanaian h3{color:var(--royal);}
+.curr-card p{font-size:14px;line-height:1.7;font-weight:300;}
+.curr-card.cambridge p{color:rgba(255,255,255,.7);}
+.curr-card.ghanaian p{color:rgba(13,42,94,.75);}
+.curr-badge{
+  display:inline-block;margin-top:20px;
+  padding:6px 14px;border-radius:2px;
+  font-size:11px;font-weight:600;
+  letter-spacing:2px;text-transform:uppercase;
+}
+.curr-card.cambridge .curr-badge{
+  background:rgba(201,168,76,.2);color:var(--gold);
+}
+.curr-card.ghanaian .curr-badge{
+  background:rgba(13,42,94,.15);color:var(--royal);
+}
+
+.subjects-row{
+  display:flex;gap:16px;flex-wrap:wrap;margin-top:50px;
+}
+.subject-chip{
+  padding:12px 22px;
+  border:1px solid rgba(13,42,94,.2);
+  border-radius:100px;
+  font-size:13px;font-weight:500;
+  color:var(--royal);
+  background:var(--white);
+  transition:.3s;cursor:default;
+}
+.subject-chip:hover{
+  background:var(--royal);color:var(--white);
+  border-color:var(--royal);
+  transform:translateY(-2px);
+}
+
+/* ─── WHY CHOOSE ─── */
+.why{
+  background:var(--dark);
+  position:relative;overflow:hidden;
+}
+.why::before{
+  content:'';position:absolute;inset:0;
+  background:url('https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=1800&q=60') center/cover;
+  opacity:.06;
+}
+.why .section-title{color:var(--white);}
+.why .section-title em{color:var(--gold);}
+.why-desc{
+  color:rgba(255,255,255,.55);
+  font-size:16px;max-width:520px;
+  line-height:1.7;font-weight:300;margin-bottom:60px;
+}
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:2px;background:rgba(255,255,255,.06);
+  border-radius:4px;overflow:hidden;
+}
+.why-card{
+  padding:44px 36px;
+  background:rgba(10,15,30,.8);
+  transition:.4s;
+  position:relative;overflow:hidden;
+}
+.why-card::after{
+  content:'';position:absolute;
+  bottom:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--gold),var(--gold-light));
+  transform:scaleX(0);transform-origin:left;transition:.4s;
+}
+.why-card:hover{background:rgba(13,42,94,.6);}
+.why-card:hover::after{transform:scaleX(1);}
+.why-icon{
+  width:52px;height:52px;
+  background:rgba(201,168,76,.1);
+  border:1px solid rgba(201,168,76,.2);
+  border-radius:4px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:22px;margin-bottom:20px;
+  transition:.3s;
+}
+.why-card:hover .why-icon{
+  background:rgba(201,168,76,.2);
+  border-color:var(--gold);
+}
+.why-card h3{
+  font-family:'Cormorant Garamond',serif;
+  font-size:20px;font-weight:600;
+  color:var(--white);margin-bottom:10px;
+}
+.why-card p{
+  font-size:14px;color:rgba(255,255,255,.5);
+  line-height:1.7;font-weight:300;
+}
+
+/* ─── GALLERY ─── */
+.gallery{background:var(--white);}
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-template-rows:220px 220px;
+  gap:12px;margin-top:50px;
+}
+.gallery-item{
+  overflow:hidden;border-radius:4px;
+  position:relative;cursor:pointer;
+  background:#ccc;
+}
+.gallery-item:nth-child(1){grid-column:span 2;grid-row:span 2;}
+.gallery-item:nth-child(4){grid-column:span 2;}
+.gallery-item img{
+  width:100%;height:100%;object-fit:cover;
+  transition:.6s ease;filter:brightness(.88);
+}
+.gallery-item:hover img{transform:scale(1.06);filter:brightness(1);}
+.gallery-caption{
+  position:absolute;bottom:0;left:0;right:0;
+  padding:16px 18px;
+  background:linear-gradient(transparent,rgba(10,15,30,.8));
+  color:var(--white);
+  font-size:12px;font-weight:500;
+  letter-spacing:2px;text-transform:uppercase;
+  transform:translateY(10px);opacity:0;transition:.3s;
+}
+.gallery-item:hover .gallery-caption{transform:translateY(0);opacity:1;}
+
+/* ─── ADMISSIONS ─── */
+.admissions{
+  background:linear-gradient(135deg,var(--gold-pale) 0%,var(--cream) 100%);
+}
+.urgency-note{
+  margin-top:22px;
+  padding:14px 16px;
+  border-left:3px solid var(--gold);
+  border-radius:0 4px 4px 0;
+  background:rgba(13,42,94,.06);
+  color:var(--royal);
+  font-size:13px;
+  line-height:1.6;
+}
+.admissions-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:80px;align-items:start;margin-top:60px;
+}
+.steps{display:flex;flex-direction:column;gap:0;}
+.step{
+  display:flex;gap:24px;align-items:flex-start;
+  padding:28px 0;
+  border-bottom:1px solid rgba(13,42,94,.1);
+}
+.step:last-child{border-bottom:none;}
+.step-num{
+  width:44px;height:44px;
+  background:var(--royal);color:var(--gold);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Cormorant Garamond',serif;
+  font-size:18px;font-weight:700;
+  flex-shrink:0;
+}
+.step-info h4{
+  font-size:15px;font-weight:600;
+  color:var(--royal);margin-bottom:4px;
+}
+.step-info p{
+  font-size:13px;color:var(--text-light);
+  line-height:1.6;
+}
+.adm-form{
+  background:var(--white);
+  padding:44px 40px;border-radius:4px;
+  box-shadow:0 20px 60px rgba(13,42,94,.1);
+}
+.adm-form h3{
+  font-family:'Cormorant Garamond',serif;
+  font-size:26px;font-weight:700;
+  color:var(--royal);margin-bottom:6px;
+}
+.adm-form p{
+  font-size:13px;color:var(--text-light);
+  margin-bottom:28px;
+}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.form-group{margin-bottom:16px;}
+.form-group label{
+  display:block;font-size:11px;
+  font-weight:600;letter-spacing:2px;
+  text-transform:uppercase;color:var(--royal);
+  margin-bottom:6px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea{
+  width:100%;padding:13px 16px;
+  border:1px solid rgba(13,42,94,.15);
+  border-radius:3px;font-family:'Outfit',sans-serif;
+  font-size:14px;color:var(--text);
+  background:var(--cream);transition:.3s;
+  outline:none;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+  border-color:var(--royal);
+  background:var(--white);
+  box-shadow:0 0 0 3px rgba(13,42,94,.08);
+}
+.form-group textarea{resize:vertical;min-height:90px;}
+.form-submit{
+  width:100%;padding:15px;
+  background:linear-gradient(135deg,var(--royal),var(--royal-mid));
+  color:var(--gold-light);
+  font-family:'Outfit',sans-serif;
+  font-size:13px;font-weight:600;
+  letter-spacing:2px;text-transform:uppercase;
+  border:none;border-radius:3px;cursor:pointer;
+  transition:.3s;margin-top:6px;
+  box-shadow:0 8px 24px rgba(13,42,94,.25);
+}
+.form-submit:hover{
+  transform:translateY(-2px);
+  box-shadow:0 14px 36px rgba(13,42,94,.35);
+}
+
+/* ─── TESTIMONIALS ─── */
+.testimonials{background:var(--cream);}
+.testi-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:24px;margin-top:50px;
+}
+.testi-card{
+  background:var(--white);
+  padding:40px 36px;border-radius:4px;
+  box-shadow:0 4px 24px rgba(13,42,94,.06);
+  transition:.3s;position:relative;
+}
+.testi-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 16px 48px rgba(13,42,94,.12);
+}
+.testi-card::before{
+  content:'"';
+  font-family:'Cormorant Garamond',serif;
+  font-size:100px;font-weight:700;
+  color:var(--gold);opacity:.15;
+  position:absolute;top:10px;right:20px;
+  line-height:1;
+}
+.stars{color:var(--gold);font-size:14px;margin-bottom:16px;letter-spacing:2px;}
+.testi-card p{
+  font-size:15px;line-height:1.8;
+  color:var(--text);font-style:italic;
+  margin-bottom:24px;font-weight:300;
+}
+.testi-author{display:flex;align-items:center;gap:14px;}
+.testi-avatar{
+  width:44px;height:44px;border-radius:50%;
+  background:linear-gradient(135deg,var(--royal),var(--royal-mid));
+  display:flex;align-items:center;justify-content:center;
+  color:var(--gold);font-weight:700;font-size:14px;
+}
+.testi-name strong{
+  display:block;font-size:14px;
+  font-weight:600;color:var(--royal);
+}
+.testi-name span{font-size:12px;color:var(--text-light);}
+
+/* ─── CONTACT ─── */
+.contact{background:var(--royal);position:relative;overflow:hidden;}
+.contact::before{
+  content:'';position:absolute;
+  bottom:-200px;left:-200px;
+  width:600px;height:600px;
+  background:radial-gradient(circle,rgba(201,168,76,.1) 0%,transparent 70%);
+  border-radius:50%;
+}
+.contact .section-title{color:var(--white);}
+.contact-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:80px;align-items:start;margin-top:60px;
+}
+.contact-info{display:flex;flex-direction:column;gap:28px;}
+.contact-item{
+  display:flex;gap:18px;align-items:flex-start;
+  padding:24px;
+  border:1px solid rgba(201,168,76,.15);
+  border-radius:4px;background:rgba(255,255,255,.04);
+  transition:.3s;
+}
+.contact-item:hover{
+  border-color:rgba(201,168,76,.35);
+  background:rgba(255,255,255,.07);
+}
+.contact-icon{
+  width:44px;height:44px;
+  background:rgba(201,168,76,.15);
+  border-radius:4px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;flex-shrink:0;
+}
+.contact-detail strong{
+  display:block;font-size:12px;
+  font-weight:600;letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--gold);margin-bottom:4px;
+}
+.contact-detail p{
+  font-size:15px;color:rgba(255,255,255,.75);
+  line-height:1.5;
+}
+.map-box{
+  border-radius:4px;overflow:hidden;
+  border:1px solid rgba(201,168,76,.2);
+  box-shadow:0 20px 60px rgba(0,0,0,.3);
+}
+.map-box iframe{
+  width:100%;height:380px;
+  display:block;filter:grayscale(.3) contrast(1.1);
+}
+
+/* ─── FOOTER ─── */
+footer{
+  background:var(--dark);
+  padding:60px 5% 30px;
+  border-top:1px solid rgba(201,168,76,.15);
+}
+.footer-inner{max-width:1200px;margin:0 auto;}
+.footer-top{
+  display:grid;grid-template-columns:1.5fr 1fr 1fr;
+  gap:60px;margin-bottom:50px;
+}
+.footer-brand .logo-text strong{font-size:24px;}
+.footer-brand .logo-text span{font-size:11px;}
+.footer-tagline{
+  font-family:'Cormorant Garamond',serif;
+  font-size:18px;font-style:italic;
+  color:var(--gold);margin:16px 0 12px;
+}
+.footer-about{
+  font-size:13px;color:rgba(255,255,255,.45);
+  line-height:1.7;max-width:280px;
+}
+.footer-col h4{
+  font-size:11px;font-weight:600;
+  letter-spacing:3px;text-transform:uppercase;
+  color:var(--gold);margin-bottom:20px;
+}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.footer-col ul a{
+  font-size:13px;color:rgba(255,255,255,.5);
+  text-decoration:none;transition:.3s;
+}
+.footer-col ul a:hover{color:var(--gold-light);}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.06);
+  padding-top:28px;
+  display:flex;justify-content:space-between;align-items:center;
+  flex-wrap:wrap;gap:12px;
+}
+.footer-bottom p{
+  font-size:12px;color:rgba(255,255,255,.3);
+}
+.footer-bottom a{color:var(--gold);text-decoration:none;}
+.footer-dev{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  color:rgba(255,255,255,.78)!important;
+  font-size:13px;
+}
+.footer-dev strong{
+  color:var(--white);
+  font-weight:600;
+}
+.footer-dev .wa-mark{
+  width:18px;
+  height:18px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+.footer-dev .wa-mark svg{
+  width:18px;
+  height:18px;
+  display:block;
+}
+.social-links{display:flex;gap:12px;}
+.social-link{
+  width:36px;height:36px;
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:4px;
+  display:flex;align-items:center;justify-content:center;
+  color:rgba(255,255,255,.4);font-size:14px;
+  text-decoration:none;transition:.3s;
+}
+.social-link:hover{
+  border-color:var(--gold);color:var(--gold);
+  background:rgba(201,168,76,.1);
+}
+
+/* ─── STICKY CTA ─── */
+.sticky-cta{
+  position:fixed;
+  left:50%;
+  bottom:14px;
+  transform:translateX(-50%);
+  width:min(720px,calc(100% - 24px));
+  z-index:998;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:10px 12px;
+  border-radius:10px;
+  background:rgba(10,15,30,.92);
+  border:1px solid rgba(201,168,76,.3);
+  box-shadow:0 12px 35px rgba(0,0,0,.35);
+  transition:transform .28s ease, opacity .28s ease;
+}
+.sticky-cta.hidden{
+  transform:translate(-50%,130%);
+  opacity:0;
+  pointer-events:none;
+}
+.sticky-close{
+  border:none;
+  background:transparent;
+  color:rgba(255,255,255,.7);
+  font-size:18px;
+  line-height:1;
+  cursor:pointer;
+  padding:4px 8px;
+}
+.sticky-close:hover{color:var(--white);}
+.sticky-cta p{
+  color:rgba(255,255,255,.85);
+  font-size:12px;
+  letter-spacing:.4px;
+}
+.sticky-cta a{
+  text-decoration:none;
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  padding:10px 14px;
+  border-radius:4px;
+}
+.sticky-call{
+  color:var(--white);
+  border:1px solid rgba(255,255,255,.22);
+}
+.sticky-apply{
+  color:var(--royal);
+  background:linear-gradient(135deg,var(--gold),var(--gold-light));
+}
+
+/* ─── MOBILE NAV ─── */
+.mobile-menu{
+  display:none;
+  position:fixed;inset:0;z-index:999;
+  background:rgba(10,15,30,.98);
+  backdrop-filter:blur(20px);
+  flex-direction:column;
+  align-items:center;justify-content:center;
+  gap:32px;
+}
+.mobile-menu.open{display:flex;}
+.mobile-menu a{
+  font-family:'Cormorant Garamond',serif;
+  font-size:32px;font-weight:600;
+  color:var(--white);text-decoration:none;
+  transition:.3s;
+}
+.mobile-menu a:hover{color:var(--gold);}
+.mobile-close{
+  position:absolute;top:24px;right:5%;
+  background:none;border:none;
+  color:var(--white);font-size:28px;cursor:pointer;
+}
+
+/* ─── FLOATING WHATSAPP ─── */
+.whatsapp-float{
+  position:fixed;bottom:32px;right:32px;z-index:999;
+  width:58px;height:58px;
+  background:linear-gradient(135deg,#25d366,#128c7e);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 30px rgba(37,211,102,.5);
+  text-decoration:none;font-size:26px;
+  transition:.3s;
+  animation:pulse-wa 2.5s infinite;
+}
+.whatsapp-float:hover{
+  transform:scale(1.12);
+  box-shadow:0 12px 40px rgba(37,211,102,.65);
+}
+.whatsapp-float .wa-tooltip{
+  position:absolute;right:68px;
+  background:var(--dark);color:var(--white);
+  font-size:12px;font-weight:500;
+  padding:8px 14px;border-radius:4px;
+  white-space:nowrap;opacity:0;
+  transition:.3s;pointer-events:none;
+}
+.whatsapp-float:hover .wa-tooltip{opacity:1;}
+@keyframes pulse-wa{
+  0%,100%{box-shadow:0 8px 30px rgba(37,211,102,.5);}
+  50%{box-shadow:0 8px 50px rgba(37,211,102,.8),0 0 0 10px rgba(37,211,102,.1);}
+}
+
+/* ─── HERO PARTICLES ─── */
+#particles{
+  position:absolute;inset:0;z-index:1;
+  overflow:hidden;pointer-events:none;
+}
+.particle{
+  position:absolute;
+  width:2px;height:2px;
+  background:var(--gold);
+  border-radius:50%;
+  opacity:0;
+  animation:float-particle linear infinite;
+}
+
+@keyframes float-particle{
+  0%{opacity:0;transform:translateY(0) scale(0);}
+  10%{opacity:.6;}
+  90%{opacity:.2;}
+  100%{opacity:0;transform:translateY(-100vh) scale(1.5);}
+}
+
+/* ─── ANIMATIONS ─── */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(30px);}
+  to{opacity:1;transform:translateY(0);}
+}
+@keyframes fadeIn{
+  from{opacity:0;}to{opacity:1;}
+}
+.reveal{
+  opacity:0;transform:translateY(40px);
+  transition:opacity .7s ease,transform .7s ease;
+}
+.reveal.visible{opacity:1;transform:translateY(0);}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:1024px){
+  .founders-grid,.academics-intro,.admissions-grid,.contact-grid{grid-template-columns:1fr;}
+  .why-grid{grid-template-columns:repeat(2,1fr);}
+  .gallery-grid{grid-template-columns:repeat(2,1fr);grid-template-rows:auto;}
+  .gallery-item:nth-child(1){grid-column:span 2;grid-row:span 1;}
+  .gallery-item:nth-child(4){grid-column:span 2;}
+  .footer-top{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:768px){
+  body{padding-bottom:120px;}
+  .nav-links,.nav-cta-wrap{display:none;}
+  .hamburger{display:flex;}
+  .hero{height:auto;min-height:620px;}
+  .hero-title{font-size:42px;}
+  .hero-stats{flex-wrap:wrap;}
+  .stat-item{flex:1 1 50%;border-bottom:1px solid rgba(255,255,255,.08);}
+  .testi-grid,.curriculum-cards{grid-template-columns:1fr;}
+  .why-grid{grid-template-columns:1fr;}
+  .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto;}
+  .gallery-item:nth-child(1){grid-column:span 2;}
+  .gallery-item:nth-child(4){grid-column:span 1;}
+  .form-row{grid-template-columns:1fr;}
+  .footer-top{grid-template-columns:1fr;}
+  .values-row{flex-direction:column;}
+  section{padding:70px 5%;}
+  .footer-bottom{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+  }
+  .social-links{gap:10px;}
+  .whatsapp-float{
+    width:52px;
+    height:52px;
+    right:16px;
+    bottom:96px;
+    font-size:22px;
+  }
+  .whatsapp-float .wa-tooltip{display:none;}
+  .sticky-cta{
+    flex-direction:column;
+    align-items:stretch;
+    padding:12px;
+  }
+  .sticky-cta p{text-align:center;}
+  .sticky-cta a{text-align:center;}
+}
+</style>
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BANNER -->
+<div class="announcement">
+  <p>🎓 Now Enrolling for 2026/2027 Academic Year <span>Limited Spaces</span></p>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo">
+    <div class="logo-crown">
+      <img src="logo.jpg" alt="Oakhill Royal International School logo"/>
+    </div>
+    <div class="logo-text">
+      <strong>ORIS</strong>
+      <span>Oakhill Royal International School</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#academics">Academics</a></li>
+    <li><a href="#school-life">School Life</a></li>
+    <li><a href="#admissions">Admissions</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#admissions" class="nav-cta">Apply Now</a></li>
+  </ul>
+  <button class="hamburger" onclick="openMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="closeMenu()">✕</button>
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#academics" onclick="closeMenu()">Academics</a>
+  <a href="#school-life" onclick="closeMenu()">School Life</a>
+  <a href="#admissions" onclick="closeMenu()">Admissions</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+  <a href="#admissions" class="btn-gold" onclick="closeMenu()">Apply Now</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div id="particles"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Apowa-Agona Road, Takoradi · Est. 2006</div>
+    <h1 class="hero-title">
+      Where Every Child<br>
+      <em>is Royalty.</em>
+    </h1>
+    <p class="hero-sub">A world-class education built on Love, Hope and Trust — right here in the heart of Takoradi, Ghana.</p>
+    <div class="hero-btns">
+      <a href="#about" class="btn-gold">Discover Our Story</a>
+      <a href="#admissions" class="btn-outline">Apply for Admission</a>
+    </div>
+    <div class="hero-trust">
+      <span class="trust-pill">Nursery to SHS</span>
+      <span class="trust-pill">Cambridge + Ghanaian Curricula</span>
+      <span class="trust-pill">Admissions Support in 24 Hours</span>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-item">
+      <div>
+        <div class="stat-num" data-count="100" data-suffix="+">0</div>
+        <div class="stat-label">Enrolled<br>Students</div>
+      </div>
+    </div>
+    <div class="stat-item">
+      <div>
+        <div class="stat-num" data-count="2">0</div>
+        <div class="stat-label">World-Class<br>Curricula</div>
+      </div>
+    </div>
+    <div class="stat-item">
+      <div>
+        <div class="stat-num" data-count="18" data-suffix="+">0</div>
+        <div class="stat-label">Years of<br>Excellence</div>
+      </div>
+    </div>
+    <div class="stat-item">
+      <div>
+        <div class="stat-num">🇬🇧</div>
+        <div class="stat-label">UK-Modelled<br>Education</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDERS -->
+<section class="founders" id="about">
+  <div class="section-inner">
+    <div class="founders-grid">
+      <div class="founders-img reveal">
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80" alt="Oakhill Royal International School"/>
+        <div class="founders-img-badge">Est. 2006 · Takoradi</div>
+      </div>
+      <div class="founders-text reveal">
+        <div class="section-tag">Our Story</div>
+        <h2 class="section-title" style="color:var(--white)">Built From<br><em>Love & Purpose</em></h2>
+        <p class="founders-body">
+          Moses and Philomena Mensah came from humble beginnings in Ghana. After years of living and working in the United Kingdom, they made a bold and courageous decision — to return home and build something that would change lives forever.
+        </p>
+        <p class="founders-body">
+          In 2006, using their personal savings and a bank loan, they purchased land in Takoradi and constructed a school from the ground up. Modelled on St Mark's Academy in the UK, Oakhill Royal was born with one powerful mission: to give children the opportunities they never had.
+        </p>
+        <div class="founders-quote">
+          <p>"We wanted to provide children with opportunities that we didn't have — giving them a good start in life."</p>
+          <cite>— Moses Mensah, Founder & Headmaster</cite>
+        </div>
+        <div class="values-row">
+          <div class="value-pill"><div class="icon">❤️</div><p>Love</p></div>
+          <div class="value-pill"><div class="icon">🌟</div><p>Hope</p></div>
+          <div class="value-pill"><div class="icon">🤝</div><p>Trust</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACADEMICS -->
+<section class="academics" id="academics">
+  <div class="section-inner">
+    <div class="academics-intro">
+      <div>
+        <div class="section-tag">Academics</div>
+        <h2 class="section-title reveal">A Curriculum<br><em>Built for the World</em></h2>
+      </div>
+      <p class="academics-desc reveal">
+        At ORIS, we believe every child deserves access to world-class education. That is why we offer both the internationally recognised British Cambridge IGCSE Curriculum and the Ghanaian National Curriculum — empowering families to choose the path that best shapes their child's future.
+      </p>
+    </div>
+    <div class="curriculum-cards reveal">
+      <div class="curr-card cambridge">
+        <span class="curr-flag">🇬🇧</span>
+        <h3>British Cambridge<br>IGCSE Curriculum</h3>
+        <p>Internationally recognised qualifications that open doors to top universities across the globe. Our Cambridge programme prepares students to compete and thrive on the world stage.</p>
+        <span class="curr-badge">International Pathway</span>
+      </div>
+      <div class="curr-card ghanaian">
+        <span class="curr-flag">🇬🇭</span>
+        <h3>Ghanaian National<br>Curriculum</h3>
+        <p>Deeply rooted in our culture and heritage. Our Ghanaian curriculum ensures every student is connected to their identity and fully prepared for excellence within Ghana and West Africa.</p>
+        <span class="curr-badge">National Pathway</span>
+      </div>
+    </div>
+    <div class="subjects-row reveal">
+      <div class="subject-chip">📐 Mathematics</div>
+      <div class="subject-chip">🔬 Sciences</div>
+      <div class="subject-chip">📖 English Language</div>
+      <div class="subject-chip">🎨 Creative Arts</div>
+      <div class="subject-chip">💻 ICT & Technology</div>
+      <div class="subject-chip">⚽ Physical Education</div>
+      <div class="subject-chip">🌍 Social Studies</div>
+      <div class="subject-chip">🎵 Music</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE -->
+<section class="why" id="school-life">
+  <div class="section-inner" style="position:relative;z-index:1;">
+    <div class="section-tag" style="color:var(--gold);">Why Choose ORIS</div>
+    <h2 class="section-title reveal">More Than a School.<br><em>A Community.</em></h2>
+    <p class="why-desc reveal">We go beyond textbooks. At ORIS, every child is nurtured holistically — academically, emotionally, and socially.</p>
+    <div class="why-grid reveal">
+      <div class="why-card">
+        <div class="why-icon">🚌</div>
+        <h3>School Transport</h3>
+        <p>Our buses reach students across surrounding villages, ensuring no child is ever left behind due to distance.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🍽️</div>
+        <h3>Nutritious Meals</h3>
+        <p>We provide daily meals so every student can focus entirely on learning, not on hunger.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🌍</div>
+        <h3>International Standards</h3>
+        <p>Modelled directly on St Mark's Academy in the United Kingdom, with the same values of excellence and discipline.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🏛️</div>
+        <h3>Enrichment & Field Trips</h3>
+        <p>From historic landmarks to fire brigade visits and cultural experiences — learning goes far beyond the classroom walls.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🤝</div>
+        <h3>Community Heart</h3>
+        <p>We actively support a local orphanage, teaching our students that true education includes compassion and giving back.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">✈️</div>
+        <h3>UK Exchange Programme</h3>
+        <p>We have proposed a future student and staff exchange partnership with our partner school in the United Kingdom.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+  <div class="section-inner">
+    <div class="section-tag">School Life</div>
+    <h2 class="section-title reveal">Life at<br><em>Oakhill Royal</em></h2>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=800&q=80" alt="Students"/>
+        <div class="gallery-caption">Morning Assembly</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80" alt="Classroom"/>
+        <div class="gallery-caption">Science Class</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&q=80" alt="Sports"/>
+        <div class="gallery-caption">Sports Day</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1560785496-3c9d27877182?w=800&q=80" alt="Activities"/>
+        <div class="gallery-caption">Creative Arts</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&q=80" alt="Library"/>
+        <div class="gallery-caption">Reading & Library</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADMISSIONS -->
+<section class="admissions" id="admissions">
+  <div class="section-inner">
+    <div class="section-tag">Admissions</div>
+    <h2 class="section-title reveal">Begin Your Child's<br><em>Royal Journey</em></h2>
+    <div class="admissions-grid">
+      <div class="reveal">
+        <p style="font-size:16px;color:var(--text-light);line-height:1.8;margin-bottom:40px;font-weight:300;">
+          We welcome applications from Nursery through Senior High School. Our admissions process is designed to be warm, simple and transparent — because every child deserves the chance to thrive.
+        </p>
+        <div class="urgency-note">
+          Admissions are currently open for a limited number of seats. Families are encouraged to book a school tour early to secure placement.
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-info">
+              <h4>Submit Your Enquiry</h4>
+              <p>Fill out the form with your child's details and we will get in touch promptly.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-info">
+              <h4>Schedule a School Tour</h4>
+              <p>Visit our campus on Apowa-Agona Road, meet the teachers, and experience ORIS for yourself.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-info">
+              <h4>Assessment & Interview</h4>
+              <p>A friendly assessment helps us understand your child's strengths and learning needs.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-info">
+              <h4>Receive Your Offer Letter</h4>
+              <p>Welcome to the Oakhill Royal family. Your child's journey begins here.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="adm-form reveal">
+        <h3>Enquire Today</h3>
+        <p>Our admissions team will respond within 24 hours.</p>
+        <form id="enquiryForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="parentName">Parent / Guardian Name</label>
+              <input id="parentName" name="parentName" type="text" placeholder="Full name" required/>
+            </div>
+            <div class="form-group">
+              <label for="childName">Child's Full Name</label>
+              <input id="childName" name="childName" type="text" placeholder="Full name" required/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="childAge">Child's Age</label>
+              <input id="childAge" name="childAge" type="number" min="1" max="20" placeholder="e.g. 8" required/>
+            </div>
+            <div class="form-group">
+              <label for="classApplying">Class Applying For</label>
+              <select id="classApplying" name="classApplying" required>
+                <option value="">Select class</option>
+                <option>Nursery / KG</option>
+                <option>Primary 1 - 3</option>
+                <option>Primary 4 - 6</option>
+                <option>JHS 1 - 3</option>
+                <option>SHS 1 - 3</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input id="phoneNumber" name="phoneNumber" type="tel" placeholder="+233 XX XXX XXXX" required/>
+          </div>
+          <div class="form-group">
+            <label for="emailAddress">Email Address</label>
+            <input id="emailAddress" name="emailAddress" type="email" placeholder="your@email.com"/>
+          </div>
+          <div class="form-group">
+            <label for="messageText">Message (Optional)</label>
+            <textarea id="messageText" name="messageText" placeholder="Any questions or additional information..."></textarea>
+          </div>
+          <button class="form-submit" type="submit">Send Enquiry on WhatsApp →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="section-inner">
+    <div class="section-tag">Testimonials</div>
+    <h2 class="section-title reveal">What Parents<br><em>Are Saying</em></h2>
+    <div class="testi-grid reveal">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"My daughter has grown tremendously since joining ORIS. The teachers genuinely care about every single child. I have never felt more confident about her future."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">MA</div>
+          <div class="testi-name">
+            <strong>Mrs. Asante</strong>
+            <span>Parent · Primary 3</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"The Cambridge curriculum here is genuinely world-class. I never expected this level of academic standard in Takoradi. My son is already thinking about universities in Europe."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">KO</div>
+          <div class="testi-name">
+            <strong>Mr. Owusu</strong>
+            <span>Parent · JHS 2</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"ORIS does not just teach academics — they build character. My children come home with values, confidence and discipline. I am extremely proud to be an ORIS parent."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">EA</div>
+          <div class="testi-name">
+            <strong>Mrs. Aidoo</strong>
+            <span>Parent · Primary 5 & 6</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="section-inner" style="position:relative;z-index:1;">
+    <div class="section-tag" style="color:var(--gold-light);">Find Us</div>
+    <h2 class="section-title reveal">We Would Love<br><em>to Hear From You</em></h2>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div class="contact-detail">
+            <strong>Location</strong>
+            <p>Apowa - Agona Road, Takoradi<br>Western Region, Ghana</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div class="contact-detail">
+            <strong>Phone Numbers</strong>
+            <p>0542 606 177<br>0206 129 821</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">🕗</div>
+          <div class="contact-detail">
+            <strong>School Hours</strong>
+            <p>Monday – Friday<br>7:00 AM – 3:00 PM</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📘</div>
+          <div class="contact-detail">
+            <strong>Find Us Online</strong>
+            <p>Oakhill Royal International School<br>on Facebook</p>
+          </div>
+        </div>
+      </div>
+      <div class="map-box reveal">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15901.453183024369!2d-1.8319201623106998!3d4.878672828752215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfe77742eb7ebf23%3A0x74b0a72a6339795f!2sOakhill%20Royal%20International%20School!5e0!3m2!1sen!2sgh!4v1774291806862!5m2!1sen!2sgh"
+          allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Oakhill Royal International School Location">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/233542606177" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+  <span class="wa-tooltip">Chat with us on WhatsApp</span>
+  💬
+</a>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo" style="margin-bottom:12px;display:inline-flex;">
+          <div class="logo-crown">
+            <img src="logo.png" alt="Oakhill Royal International School logo"/>
+          </div>
+          <div class="logo-text">
+            <strong>ORIS</strong>
+            <span>Oakhill Royal International School</span>
+          </div>
+        </a>
+        <p class="footer-tagline">"Love. Hope. Trust."</p>
+        <p class="footer-about">Providing world-class education to the children of Takoradi and beyond since 2006. Every child here is royalty.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#academics">Academics</a></li>
+          <li><a href="#school-life">School Life</a></li>
+          <li><a href="#admissions">Admissions</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:0542606177">0542 606 177</a></li>
+          <li><a href="tel:0206129821">0206 129 821</a></li>
+          <li><a href="mailto:oakhillroyalschool@gmail.com">oakhillroyalschool@gmail.com</a></li>
+          <li><a href="https://maps.google.com/?q=Apowa+-+Agona+Road,+Takoradi,+Ghana" target="_blank" rel="noopener noreferrer">Apowa - Agona Road, Takoradi</a></li>
+          <li><a href="https://www.facebook.com/p/Oakhill-Royal-International-School-Ghana-100057274655496/" target="_blank" rel="noopener noreferrer">Official Facebook Page</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p id="copyrightText">© 2025 Oakhill Royal International School. All rights reserved.</p>
+      <a class="footer-dev" href="https://wa.me/233534086538" target="_blank" rel="noopener noreferrer" aria-label="Developed by Adimat on WhatsApp">
+        <span>Developed by</span>
+        <strong>Adimat</strong>
+        <span class="wa-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.52 3.48A11.84 11.84 0 0 0 12.08 0C5.58 0 .3 5.27.3 11.77c0 2.07.54 4.08 1.56 5.84L0 24l6.57-1.72a11.78 11.78 0 0 0 5.5 1.4h.01c6.5 0 11.78-5.28 11.78-11.78 0-3.15-1.23-6.12-3.34-8.42Zm-8.44 18.2h-.01a9.85 9.85 0 0 1-5.02-1.38l-.36-.22-3.9 1.02 1.04-3.8-.23-.39a9.8 9.8 0 0 1-1.5-5.14C2.1 6.38 6.6 1.9 12.08 1.9c2.62 0 5.08 1.02 6.93 2.88a9.74 9.74 0 0 1 2.87 6.95c0 5.49-4.49 9.95-9.8 9.95Z" fill="#25D366"/>
+            <path d="M17.7 14.38c-.3-.15-1.78-.88-2.06-.97-.27-.1-.46-.15-.65.15-.2.3-.75.97-.93 1.16-.17.2-.35.22-.65.08-.3-.15-1.26-.47-2.4-1.5-.88-.78-1.48-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.08-.15-.66-1.6-.9-2.18-.24-.58-.48-.5-.65-.5h-.56c-.2 0-.52.07-.8.37-.27.3-1.05 1.03-1.05 2.52 0 1.48 1.08 2.92 1.23 3.12.15.2 2.11 3.22 5.1 4.51.71.31 1.27.5 1.7.64.72.23 1.37.2 1.89.12.58-.09 1.78-.73 2.03-1.43.25-.7.25-1.3.17-1.43-.08-.12-.28-.2-.57-.35Z" fill="#25D366"/>
+          </svg>
+        </span>
+      </a>
+      <div class="social-links">
+        <a href="https://www.facebook.com/p/Oakhill-Royal-International-School-Ghana-100057274655496/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">f</a>
+        <a href="https://wa.me/233542606177" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp">W</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <button class="sticky-close" type="button" aria-label="Close quick admission bar" onclick="closeStickyCta()">✕</button>
+  <p>Ready to enrol your child? Speak directly with admissions today.</p>
+  <a class="sticky-call" href="tel:0542606177">Call 0542 606 177</a>
+  <a class="sticky-apply" href="#admissions">Start Admission</a>
+</div>
+
+<script>
+// Navbar scroll effect
+window.addEventListener('scroll',()=>{
+  document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>50);
+});
+
+// Mobile menu
+function openMenu(){document.getElementById('mobileMenu').classList.add('open');document.body.style.overflow='hidden';}
+function closeMenu(){document.getElementById('mobileMenu').classList.remove('open');document.body.style.overflow='';}
+
+// Scroll reveal
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');}});
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+// Animated counter
+function animateCount(el,target,suffix=''){
+  let start=0;
+  const duration=2000;
+  const step=timestamp=>{
+    if(!start) start=timestamp;
+    const progress=Math.min((timestamp-start)/duration,1);
+    const eased=1-Math.pow(1-progress,3);
+    el.textContent=Math.floor(eased*target)+(progress<1?'':suffix);
+    if(progress<1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+
+// Trigger counters when hero stats visible
+const statsObserver=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const nums=e.target.querySelectorAll('.stat-num[data-count]');
+      nums.forEach(n=>animateCount(n,+n.dataset.count,n.dataset.suffix||''));
+      statsObserver.unobserve(e.target);
+    }
+  });
+},{threshold:.5});
+const statsEl=document.querySelector('.hero-stats');
+if(statsEl) statsObserver.observe(statsEl);
+
+// Particles
+(function(){
+  const container=document.getElementById('particles');
+  if(!container) return;
+  for(let i=0;i<40;i++){
+    const p=document.createElement('div');
+    p.className='particle';
+    p.style.cssText=`
+      left:${Math.random()*100}%;
+      top:${Math.random()*100}%;
+      width:${Math.random()*3+1}px;
+      height:${Math.random()*3+1}px;
+      animation-duration:${Math.random()*15+8}s;
+      animation-delay:${Math.random()*10}s;
+      opacity:${Math.random()*.5};
+    `;
+    container.appendChild(p);
+  }
+})();
+
+// Form submit -> WhatsApp lead capture
+function handleSubmit(event){
+  event.preventDefault();
+  const form=document.getElementById('enquiryForm');
+  if(!form || !form.checkValidity()){
+    form.reportValidity();
+    return;
+  }
+  const data=new FormData(form);
+  const text=[
+    'Hello ORIS Admissions Team,',
+    '',
+    'I would like to enquire about admission.',
+    `Parent/Guardian: ${data.get('parentName') || ''}`,
+    `Child Name: ${data.get('childName') || ''}`,
+    `Child Age: ${data.get('childAge') || ''}`,
+    `Class Applying For: ${data.get('classApplying') || ''}`,
+    `Phone Number: ${data.get('phoneNumber') || ''}`,
+    `Email: ${data.get('emailAddress') || 'N/A'}`,
+    `Message: ${data.get('messageText') || 'N/A'}`
+  ].join('\n');
+
+  const whatsappNumber='233542606177';
+  const url=`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+  window.open(url,'_blank');
+}
+
+const enquiryForm=document.getElementById('enquiryForm');
+if(enquiryForm){
+  enquiryForm.addEventListener('submit',handleSubmit);
+}
+
+const copyrightText=document.getElementById('copyrightText');
+if(copyrightText){
+  copyrightText.textContent=`© ${new Date().getFullYear()} Oakhill Royal International School. All rights reserved.`;
+}
+
+function closeStickyCta(){
+  const cta=document.querySelector('.sticky-cta');
+  if(!cta) return;
+  window.stickyClosedByUser=true;
+  cta.style.display='none';
+  document.body.style.paddingBottom='16px';
+}
+
+const stickyCta=document.querySelector('.sticky-cta');
+let lastScrollY=window.scrollY;
+window.stickyClosedByUser=false;
+
+if(stickyCta){
+  setTimeout(()=>{
+    if(!window.stickyClosedByUser){
+      stickyCta.classList.add('hidden');
+    }
+  },8000);
+
+  window.addEventListener('scroll',()=>{
+    if(window.stickyClosedByUser) return;
+    const currentY=window.scrollY;
+    const scrollingUp=currentY<lastScrollY;
+    if(scrollingUp && currentY>80){
+      stickyCta.classList.remove('hidden');
+    }else if(!scrollingUp && currentY>80){
+      stickyCta.classList.add('hidden');
+    }
+    lastScrollY=currentY;
+  });
+}
+</script>
+</body>
+</html>
